@@ -93,7 +93,7 @@ p{margin:0}
 .ventajas svg{width:30px;height:30px;flex:none;margin-top:2px}
 
 /* ---------- Colección ---------- */
-section{padding-block:80px}
+section{padding-block:80px;scroll-margin-top:64px}
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
 .head h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
 .head h2 em{font-style:normal;color:var(--vino-2)}
@@ -137,6 +137,25 @@ section{padding-block:80px}
 .pasos h3{font-family:var(--body);font-weight:700;font-size:1.12rem;margin-bottom:6px}
 .pasos p{color:var(--muted)}
 
+/* ---------- Opiniones ---------- */
+.opiniones{padding-top:0}
+.nota-media{display:grid;grid-template-columns:auto auto;gap:2px 14px;align-items:center}
+.media{font-family:var(--display);font-size:3.2rem;line-height:1;color:var(--vino-2);grid-row:span 2}
+@media (prefers-color-scheme: dark){.media{color:var(--melocoton)}}
+.media small{font-size:1.2rem;color:var(--muted)}
+.estrellas{color:var(--oro);font-size:1.3rem;letter-spacing:.1em}
+.media-estrella{background:linear-gradient(90deg,var(--oro) 50%,var(--line) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fuente{font-size:.84rem;color:var(--muted);max-width:26ch}
+.resenas{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.resenas figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-width:0}
+.resenas blockquote{margin:0;font-family:var(--display);font-size:1.45rem;line-height:1.2;color:var(--fg)}
+.resenas figcaption{font-size:.85rem;font-weight:600;color:var(--muted)}
+.resenas figcaption span{font-weight:400}
+.ver-todas{margin-top:22px}
+.ver-todas a{font-weight:700;color:var(--manton);text-underline-offset:3px}
+@media (max-width:900px){.resenas{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.resenas{grid-template-columns:1fr}}
+
 /* ---------- Cuidados + FAQ ---------- */
 .dos{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 .dos>div{min-width:0}
@@ -152,11 +171,11 @@ details[open] summary::after{content:"–"}
 details p{margin-top:8px;color:var(--muted)}
 
 /* ---------- Contacto ---------- */
-.cierre{background:var(--manton);color:var(--on-dark)}
+.cierre{background:#1e5446;color:var(--on-dark)}
 .cierre .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
 .cierre h2{font-size:clamp(2rem,4.6vw,3.3rem)}
 .cierre p{opacity:.9;margin-top:14px;max-width:46ch}
-.cierre .btn-melo{background:var(--on-dark);color:var(--manton)}
+.cierre .btn-melo{background:var(--on-dark);color:#1e5446}
 .cierre .user{font-family:var(--hand);font-size:2.1rem}
 
 footer{background:var(--vino);color:var(--on-dark)}
@@ -191,6 +210,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <a href="#coleccion">Colección</a>
       <a href="#historia">La firma</a>
       <a href="#comprar">Cómo comprar</a>
+      <a href="#opiniones">Opiniones</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </div>
@@ -261,6 +281,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
         <li><h3>Ábrelo en Vinted</h3><p>Pulsa en la foto. Verás el anuncio con más fotos y podrás preguntarme lo que quieras.</p></li>
         <li><h3>Compra con protección</h3><p>Pagas en Vinted y el dinero no me llega hasta que recibes los pendientes y das el visto bueno.</p></li>
       </ol>
+    </div>
+  </section>
+
+  <section class="opiniones" id="opiniones">
+    <div class="wrap">
+      <div class="head">
+        <h2>Lo que dicen <em>en Vinted</em></h2>
+        <div class="nota-media">
+          <span class="media">4,5<small>/5</small></span>
+          <span class="estrellas" aria-label="4,5 de 5 estrellas">★★★★<span class="media-estrella">★</span></span>
+          <span class="fuente">Valoraciones de compradores en mi perfil de Vinted</span>
+        </div>
+      </div>
+      <div class="resenas">
+        <figure><blockquote>«super perfecto!!!»</blockquote><figcaption>lunadekaramelo23</figcaption></figure>
+        <figure><blockquote>«muy bonito el top»</blockquote><figcaption>danielitaass</figcaption></figure>
+        <figure><blockquote>«parfait»</blockquote><figcaption>ophali <span>(«perfecto»)</span></figcaption></figure>
+        <figure><blockquote>«Correu tudo bem!»</blockquote><figcaption>t_m_f <span>(«¡Todo fue bien!»)</span></figcaption></figure>
+      </div>
+      <p class="ver-todas"><a href="https://www.vinted.es/member/258138814?tab=feedback" target="_blank" rel="noopener">Ver todas las valoraciones en Vinted ↗</a></p>
     </div>
   </section>
 
