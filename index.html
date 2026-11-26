@@ -3,198 +3,188 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
 <title>Lunar de Melocotón · Pendientes de flamenca vintage</title>
-<meta name="description" content="Pendientes de flamenca vintage, nuevos con etiqueta y piezas únicas. Aros, lágrimas y filigrana dorada para la feria, el Rocío o una boda.">
+<meta name="description" content="Pendientes de flamenca vintage de la antigua Mercería Paloma del Rocío. Nuevos con etiqueta: aros, lágrimas y filigrana dorada para la feria, el Rocío o una boda.">
 <meta property="og:title" content="Lunar de Melocotón · Pendientes de flamenca vintage">
-<meta property="og:description" content="Piezas únicas de otra época, nuevas con etiqueta. Compra segura en Vinted.">
+<meta property="og:description" content="El último género de la Mercería Paloma del Rocío, nuevo con etiqueta. Compra segura en Vinted.">
 <meta property="og:image" content="img/9454868949-1.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f39a7b'/%3E%3Ccircle cx='16' cy='16' r='6' fill='%235a0f22'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232445a6'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23e0a33a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Figtree:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: banda de vino con lunares melocotón como "caseta"; escaparate en rejilla de tarjetas de muestrario; cierre en verde mantón */
+/* Layout: escaparate de mercería — cabecera en azul cobalto con azulejo, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en albero */
 :root{
-  --bg:#fdf6f2;
-  --paper:#ffffff;
-  --fg:#2b1016;
-  --muted:#7b5a5e;
-  --vino:#5a0f22;
-  --vino-2:#7a1630;
-  --melocoton:#f39a7b;
-  --manton:#1e5446;
-  --oro:#c8963a;
-  --line:#efdcd5;
-  --on-dark:#fff4ee;
-  --display:"Abril Fatface","Didot",Georgia,serif;
+  --cal:#f6f4f0;
+  --papel:#ffffff;
+  --tinta:#18203a;
+  --gris:#5d6378;
+  --cobalto:#2445a6;
+  --cobalto-osc:#1a3380;
+  --albero:#e0a33a;
+  --linea:#e2dfd8;
+  --clara:#fbfaf7;
+  --display:"Gloock","Didot",Georgia,serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --hand:"Caveat","Segoe Script",cursive;
-}
-@media (prefers-color-scheme: dark){
-  :root{--bg:#1a0c10;--paper:#25131a;--fg:#f9e9e4;--muted:#c7a6a9;--line:#3d232a;--melocoton:#f6a98d;--manton:#5cbf9f;color-scheme:dark}
+  --mono:"DM Mono",ui-monospace,Consolas,monospace;
+  color-scheme:light;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+body{margin:0;background:var(--cal);color:var(--tinta);font-family:var(--body);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{max-width:100%;display:block}
 a{color:inherit}
-h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.04;margin:0;text-wrap:balance}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.06;margin:0;text-wrap:balance}
 p{margin:0}
-:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:4px}
-.wrap{max-width:1180px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
-.eyebrow{font-size:.76rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+:focus-visible{outline:3px solid var(--albero);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1200px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
+.ticket{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
 
-/* ---------- Cabecera ---------- */
-.top{position:sticky;top:0;z-index:20;background:var(--vino);color:var(--on-dark);padding-top:env(safe-area-inset-top,0px)}
+.azulejo{background-color:var(--cobalto);
+  background-image:
+    radial-gradient(circle at 50% 50%, rgba(224,163,58,.95) 0 5px, transparent 6px),
+    radial-gradient(circle at 50% 50%, transparent 0 17px, rgba(255,255,255,.16) 18px 19px, transparent 20px),
+    linear-gradient(45deg, transparent 47%, rgba(255,255,255,.10) 48% 52%, transparent 53%),
+    linear-gradient(-45deg, transparent 47%, rgba(255,255,255,.10) 48% 52%, transparent 53%);
+  background-size:64px 64px}
+
+.top{position:sticky;top:0;z-index:20;background:var(--tinta);color:var(--clara);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:12px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
-.logo .mark{width:34px;height:34px;flex:none}
-.logo b{font-family:var(--display);font-weight:400;font-size:1.35rem;letter-spacing:.01em}
+.logo svg{width:32px;height:32px;flex:none}
+.logo b{font-family:var(--display);font-weight:400;font-size:1.3rem}
 .top nav{display:flex;gap:22px;font-weight:600;font-size:.92rem;flex-wrap:wrap}
-.top nav a{text-decoration:none;opacity:.85}
-.top nav a:hover{opacity:1;color:var(--melocoton)}
+.top nav a{text-decoration:none;opacity:.8}
+.top nav a:hover{opacity:1;color:var(--albero)}
 
-/* ---------- Hero ---------- */
-.hero{background-color:var(--vino);color:var(--on-dark);position:relative;overflow:hidden;
-  background-image:radial-gradient(circle,rgba(243,154,123,.9) 0 6px,transparent 7px),radial-gradient(circle,rgba(243,154,123,.9) 0 6px,transparent 7px);
-  background-size:56px 56px;background-position:0 0,28px 28px}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--vino) 30%,rgba(90,15,34,.86) 52%,rgba(90,15,34,.35))}
-.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center;padding-block:72px 84px}
-.hero .eyebrow{color:var(--melocoton)}
-.hero h1{font-size:clamp(2.7rem,6.6vw,5.2rem);margin-top:14px}
-.hero h1 span{color:var(--melocoton)}
-.hero .lead{font-size:1.15rem;max-width:38ch;margin-top:20px;opacity:.9}
+.hero{color:var(--clara);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--cobalto-osc) 34%,rgba(26,51,128,.88) 55%,rgba(26,51,128,.25))}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding-block:76px 88px}
+.hero .ticket{color:var(--albero)}
+.hero h1{font-size:clamp(2.7rem,6.4vw,5rem);margin-top:16px}
+.hero h1 span{color:var(--albero)}
+.hero .lead{font-size:1.14rem;max-width:40ch;margin-top:20px;opacity:.92}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.96rem;text-decoration:none;border:2px solid transparent;transition:transform .15s,background .15s;cursor:pointer}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.96rem;text-decoration:none;border:2px solid transparent;transition:transform .15s;cursor:pointer}
 .btn:hover{transform:translateY(-2px)}
-.btn-melo{background:var(--melocoton);color:var(--vino)}
-.btn-line{border-color:var(--on-dark);color:var(--on-dark)}
-.sello{display:inline-block;margin-top:26px;font-family:var(--hand);font-size:1.6rem;color:var(--melocoton);transform:rotate(-3deg)}
-
-.collage{position:relative;height:460px}
-.collage figure{position:absolute;margin:0;width:56%;background:#fff;padding:10px 10px 34px;box-shadow:0 18px 40px rgba(0,0,0,.35);border-radius:3px}
+.btn-albero{background:var(--albero);color:var(--tinta)}
+.btn-linea{border-color:var(--clara);color:var(--clara)}
+.collage{position:relative;height:470px}
+.collage figure{position:absolute;margin:0;width:54%;background:var(--papel);padding:10px 10px 36px;box-shadow:0 22px 44px rgba(10,16,40,.4);border-radius:2px}
 .collage figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
-.collage figcaption{position:absolute;bottom:6px;left:0;right:0;text-align:center;font-family:var(--hand);font-size:1.3rem;color:var(--vino)}
-.collage .f1{left:0;top:30px;transform:rotate(-7deg)}
+.collage figcaption{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)}
+.collage .f1{left:0;top:36px;transform:rotate(-6deg)}
 .collage .f2{right:0;top:0;transform:rotate(5deg);z-index:2}
-.collage .f3{left:22%;bottom:-10px;transform:rotate(-1deg);z-index:3;width:48%}
+.collage .f3{left:23%;bottom:-14px;transform:rotate(-1deg);z-index:3;width:47%}
 @media (prefers-reduced-motion:no-preference){
-  .collage figure{transition:transform .4s}
-  .collage:hover .f1{transform:rotate(-10deg) translateX(-8px)}
+  .collage figure{transition:transform .45s}
+  .collage:hover .f1{transform:rotate(-9deg) translateX(-8px)}
   .collage:hover .f2{transform:rotate(8deg) translateX(8px)}
 }
 
-/* ---------- Franja de garantías ---------- */
-.ventajas{background:var(--paper);border-bottom:1px solid var(--line)}
+.ventajas{background:var(--papel);border-bottom:1px solid var(--linea)}
 .ventajas ul{list-style:none;margin:0;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:26px}
 .ventajas li{display:flex;gap:12px;align-items:flex-start;font-size:.93rem;min-width:0}
 .ventajas li b{display:block;font-size:1rem}
-.ventajas li span{color:var(--muted)}
+.ventajas li span{color:var(--gris)}
 .ventajas svg{width:30px;height:30px;flex:none;margin-top:2px}
 
-/* ---------- Colección ---------- */
-section{padding-block:80px;scroll-margin-top:64px}
+section{padding-block:84px;scroll-margin-top:60px}
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
 .head h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
-.head h2 em{font-style:normal;color:var(--vino-2)}
-@media (prefers-color-scheme: dark){.head h2 em{color:var(--melocoton)}}
-.head p{max-width:44ch;color:var(--muted)}
-.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
-.filtros button{font:inherit;font-weight:600;font-size:.9rem;padding:9px 18px;border-radius:999px;border:1.5px solid var(--line);background:var(--paper);color:var(--fg);cursor:pointer}
-.filtros button .n{opacity:.55;font-variant-numeric:tabular-nums;margin-left:4px}
-.filtros button[aria-pressed="true"]{background:var(--vino);border-color:var(--vino);color:var(--on-dark)}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:26px 22px}
+.head h2 em{font-style:normal;color:var(--cobalto)}
+.head p{max-width:46ch;color:var(--gris)}
+
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
+.filtros button{font:inherit;font-weight:600;font-size:.9rem;padding:9px 18px;border-radius:999px;border:1.5px solid var(--linea);background:var(--papel);color:var(--tinta);cursor:pointer}
+.filtros button .n{opacity:.5;font-family:var(--mono);font-size:.8rem;margin-left:6px}
+.filtros button[aria-pressed="true"]{background:var(--cobalto);border-color:var(--cobalto);color:var(--clara)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:30px 22px}
 .card{display:flex;flex-direction:column;text-decoration:none;color:inherit}
-.card .foto{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:4px;background:var(--line)}
-.card .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .35s,transform .6s}
+.card .foto{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:3px;background:#efece7}
+.card .foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s,transform .7s}
 .card .foto img.b{opacity:0}
 .card:hover .foto img.b{opacity:1}
-.card:hover .foto img.a{transform:scale(1.04)}
-.card .num{position:absolute;left:10px;top:10px;background:var(--paper);color:var(--fg);font-size:.72rem;font-weight:700;letter-spacing:.1em;padding:4px 8px;border-radius:3px;font-variant-numeric:tabular-nums}
-.card .unica{position:absolute;right:10px;top:10px;background:var(--vino);color:var(--on-dark);font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border-radius:3px}
-.card .info{display:flex;justify-content:space-between;gap:12px;padding-top:12px;align-items:flex-start}
+.card:hover .foto img.a{transform:scale(1.05)}
+.card .ref{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--gris)}
+.card .colores{position:absolute;right:10px;top:10px;background:var(--papel);color:var(--cobalto);font-size:.7rem;font-weight:700;padding:4px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card .info{display:flex;justify-content:space-between;gap:12px;padding-top:14px;align-items:flex-start}
 .card h3{font-family:var(--body);font-weight:700;font-size:1.04rem;line-height:1.3}
-.card .col{font-size:.84rem;color:var(--muted)}
-.card .precio{font-family:var(--display);font-size:1.5rem;color:var(--vino-2);white-space:nowrap;font-variant-numeric:tabular-nums}
-@media (prefers-color-scheme: dark){.card .precio{color:var(--melocoton)}}
-.card .comprar{margin-top:10px;font-size:.88rem;font-weight:700;color:var(--manton);text-decoration:underline;text-underline-offset:3px}
+.card .col{font-size:.84rem;color:var(--gris)}
+.card .precio{font-family:var(--mono);font-weight:500;font-size:1rem;white-space:nowrap;border:1.5px dashed var(--tinta);padding:3px 9px;border-radius:3px;transform:rotate(2deg)}
+.card .comprar{margin-top:10px;font-size:.88rem;font-weight:700;color:var(--cobalto);text-decoration:underline;text-underline-offset:3px}
 
-/* ---------- Historia ---------- */
-.historia{background:var(--paper);border-block:1px solid var(--line)}
-.historia .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:center}
-.historia .img{position:relative}
-.historia .img img{aspect-ratio:4/5;object-fit:cover;border-radius:4px;width:85%}
-.historia .img .nota{position:absolute;right:0;bottom:24px;background:var(--melocoton);color:var(--vino);font-family:var(--hand);font-size:1.5rem;padding:10px 18px;transform:rotate(-4deg);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.historia{background:var(--papel);border-block:1px solid var(--linea)}
+.historia .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
+.rotulo{border:2px solid var(--tinta);padding:34px 28px;text-align:center;position:relative;background:var(--cal)}
+.rotulo::before{content:"";position:absolute;inset:8px;border:1px solid var(--tinta);pointer-events:none}
+.rotulo small{display:block;font-family:var(--mono);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gris)}
+.rotulo strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;margin-block:12px;color:var(--cobalto)}
+.rotulo span{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
+.rotulo img{margin:26px auto 0;width:62%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
 .historia .txt{display:grid;gap:16px;max-width:60ch}
-.historia .eyebrow{color:var(--manton)}
+.historia .ticket{color:var(--cobalto)}
 .historia h2{font-size:clamp(2rem,4vw,3rem)}
-.historia p{color:var(--muted);font-size:1.04rem}
+.historia p{color:var(--gris);font-size:1.05rem}
 
-/* ---------- Cómo comprar ---------- */
 .pasos{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
-.pasos li{counter-increment:p;border-top:2px solid var(--vino-2);padding-top:18px;min-width:0}
-.pasos li::before{content:counter(p);font-family:var(--display);font-size:2.6rem;line-height:1;color:var(--melocoton);display:block;margin-bottom:10px}
+.pasos li{counter-increment:p;border-top:2px solid var(--tinta);padding-top:18px;min-width:0}
+.pasos li::before{content:"0" counter(p);font-family:var(--mono);font-size:.85rem;color:var(--cobalto);display:block;margin-bottom:10px;letter-spacing:.1em}
 .pasos h3{font-family:var(--body);font-weight:700;font-size:1.12rem;margin-bottom:6px}
-.pasos p{color:var(--muted)}
+.pasos p{color:var(--gris)}
 
-/* ---------- Opiniones ---------- */
 .opiniones{padding-top:0}
 .nota-media{display:grid;grid-template-columns:auto auto;gap:2px 14px;align-items:center}
-.media{font-family:var(--display);font-size:3.2rem;line-height:1;color:var(--vino-2);grid-row:span 2}
-@media (prefers-color-scheme: dark){.media{color:var(--melocoton)}}
-.media small{font-size:1.2rem;color:var(--muted)}
-.estrellas{color:var(--oro);font-size:1.3rem;letter-spacing:.1em}
-.media-estrella{background:linear-gradient(90deg,var(--oro) 50%,var(--line) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
-.fuente{font-size:.84rem;color:var(--muted);max-width:26ch}
+.media{font-family:var(--display);font-size:3.3rem;line-height:1;color:var(--cobalto);grid-row:span 2}
+.media small{font-size:1.2rem;color:var(--gris)}
+.estrellas{color:var(--albero);font-size:1.3rem;letter-spacing:.1em}
+.media-estrella{background:linear-gradient(90deg,var(--albero) 50%,var(--linea) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.fuente{font-size:.84rem;color:var(--gris);max-width:26ch}
 .resenas{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.resenas figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:22px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:16px;min-width:0}
-.resenas blockquote{margin:0;font-family:var(--display);font-size:1.45rem;line-height:1.2;color:var(--fg)}
-.resenas figcaption{font-size:.85rem;font-weight:600;color:var(--muted)}
-.resenas figcaption span{font-weight:400}
+.resenas figure{margin:0;background:var(--papel);border:1px solid var(--linea);border-radius:4px;padding:24px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-width:0}
+.resenas blockquote{margin:0;font-family:var(--display);font-size:1.45rem;line-height:1.2}
+.resenas figcaption{font-family:var(--mono);font-size:.78rem;color:var(--gris)}
 .ver-todas{margin-top:22px}
-.ver-todas a{font-weight:700;color:var(--manton);text-underline-offset:3px}
-@media (max-width:900px){.resenas{grid-template-columns:1fr 1fr}}
-@media (max-width:520px){.resenas{grid-template-columns:1fr}}
+.ver-todas a{font-weight:700;color:var(--cobalto);text-underline-offset:3px}
 
-/* ---------- Cuidados + FAQ ---------- */
-.dos{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.dos{display:grid;grid-template-columns:1fr 1fr;gap:60px}
 .dos>div{min-width:0}
 .dos h2{font-size:clamp(1.9rem,3.6vw,2.5rem);margin-bottom:20px}
 .cuid{list-style:none;padding:0;margin:0;display:grid;gap:14px}
 .cuid li{display:grid;grid-template-columns:18px 1fr;gap:12px}
-.cuid li::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--melocoton);margin-top:7px}
-details{border-bottom:1px solid var(--line);padding-block:15px}
+.cuid li::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--albero);margin-top:8px}
+details{border-bottom:1px solid var(--linea);padding-block:15px}
 summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--vino-2);font-size:1.4rem;line-height:1}
+summary::after{content:"+";color:var(--cobalto);font-size:1.4rem;line-height:1}
 details[open] summary::after{content:"–"}
-details p{margin-top:8px;color:var(--muted)}
+details p{margin-top:8px;color:var(--gris)}
 
-/* ---------- Contacto ---------- */
-.cierre{background:#1e5446;color:var(--on-dark)}
+.cierre{background:var(--albero);color:var(--tinta)}
 .cierre .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
 .cierre h2{font-size:clamp(2rem,4.6vw,3.3rem)}
-.cierre p{opacity:.9;margin-top:14px;max-width:46ch}
-.cierre .btn-melo{background:var(--on-dark);color:#1e5446}
-.cierre .user{font-family:var(--hand);font-size:2.1rem}
+.cierre p{margin-top:14px;max-width:46ch}
+.cierre .btn{background:var(--tinta);color:var(--clara)}
+.cierre .user{font-family:var(--mono);font-size:1.3rem;font-weight:500}
 
-footer{background:var(--vino);color:var(--on-dark)}
+footer{background:var(--tinta);color:var(--clara)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));font-size:.88rem;opacity:.85}
 
 @media (max-width:900px){
   .hero .wrap,.historia .wrap,.dos,.cierre .wrap{grid-template-columns:1fr}
-  .collage{height:380px;max-width:440px;margin-inline:auto;width:100%}
+  .collage{height:390px;max-width:440px;margin-inline:auto;width:100%}
   .ventajas ul{grid-template-columns:1fr 1fr}
   .pasos{grid-template-columns:1fr}
+  .resenas{grid-template-columns:1fr 1fr}
   .top nav{display:none}
 }
 @media (max-width:520px){
-  .ventajas ul{grid-template-columns:1fr}
-  .grid{grid-template-columns:1fr 1fr;gap:20px 12px}
-  .card .info{flex-direction:column;gap:2px}
-  .card .precio{font-size:1.25rem}
-  .collage{height:320px}
-  section{padding-block:60px}
+  .ventajas ul,.resenas{grid-template-columns:1fr}
+  .grid{grid-template-columns:1fr 1fr;gap:24px 12px}
+  .card .info{flex-direction:column;gap:6px}
+  .collage{height:330px}
+  section{padding-block:62px}
 }
 </style>
 </head>
@@ -203,12 +193,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="Lunar de Melocotón, inicio">
-      <svg class="mark" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="16" fill="#f39a7b"/><circle cx="17" cy="17" r="7" fill="#5a0f22"/><circle cx="14.5" cy="14.5" r="2" fill="#fff" opacity=".55"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#2445a6"/><circle cx="16" cy="16" r="11" fill="none" stroke="#fbfaf7" stroke-width="1" opacity=".5"/><circle cx="16" cy="16" r="5.5" fill="#e0a33a"/></svg>
       <b>Lunar de Melocotón</b>
     </a>
     <nav aria-label="Principal">
       <a href="#coleccion">Colección</a>
-      <a href="#historia">La firma</a>
+      <a href="#historia">La mercería</a>
       <a href="#comprar">Cómo comprar</a>
       <a href="#opiniones">Opiniones</a>
       <a href="#contacto">Contacto</a>
@@ -217,17 +207,16 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 </header>
 
 <main id="inicio">
-  <section class="hero" style="padding-block:0">
+  <section class="hero azulejo" style="padding-block:0">
     <div class="wrap">
       <div>
-        <span class="eyebrow">Pendientes de flamenca vintage · piezas únicas</span>
-        <h1>Joyas de otra feria, <span>listas para la tuya</span></h1>
-        <p class="lead">Pendientes de flamenca de colección, guardados durante años y nuevos con etiqueta. Aros, lágrimas y filigrana dorada que ya no se fabrican. De cada modelo solo hay un par.</p>
+        <span class="ticket">Herencia de la Mercería Paloma del Rocío</span>
+        <h1>Pendientes de flamenca <span>de los de antes</span></h1>
+        <p class="lead">El último género de la mercería de mi abuela: pendientes de flamenca nuevos, con su etiqueta y su cartón, guardados desde que cerró la tienda. Modelos que ya no se fabrican, a precio de mercería.</p>
         <div class="ctas">
-          <a class="btn btn-melo" href="#coleccion">Ver la colección</a>
-          <a class="btn btn-line" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Mi tienda en Vinted ↗</a>
+          <a class="btn btn-albero" href="#coleccion">Ver la colección</a>
+          <a class="btn btn-linea" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Comprar en Vinted ↗</a>
         </div>
-        <span class="sello">Elegidos y fotografiados uno a uno</span>
       </div>
       <div class="collage" aria-hidden="true">
         <figure class="f1"><img src="img/9454607013-1.webp" alt=""><figcaption>Alcazaba</figcaption></figure>
@@ -239,10 +228,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <div class="ventajas">
     <ul class="wrap">
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#c8963a" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#c8963a" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Stock antiguo sin estrenar</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#c8963a" stroke-width="2"/><circle cx="15" cy="15" r="5" fill="#c8963a"/></svg><div><b>Piezas únicas</b><span>Un solo par de cada modelo</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#c8963a" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#c8963a" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#c8963a" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#c8963a"/><circle cx="23" cy="23" r="2.2" fill="#c8963a"/></svg><div><b>Envío a toda España</b><span>Punto de recogida o domicilio</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#2445a6" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#2445a6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Género de tienda, sin estrenar</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="9" cy="15" r="5" fill="#e0a33a"/><circle cx="21" cy="15" r="5" fill="#2445a6"/></svg><div><b>Varios colores</b><span>Algunos modelos en más de un tono</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#2445a6" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#2445a6" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#2445a6" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#2445a6"/><circle cx="23" cy="23" r="2.2" fill="#2445a6"/></svg><div><b>Envío desde Málaga</b><span>A toda España</span></div></li>
     </ul>
   </div>
 
@@ -250,7 +239,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     <div class="wrap">
       <div class="head">
         <h2>La <em>colección</em></h2>
-        <p>Toca un par para verlo en Vinted, con todas sus fotos. Cuando se vende, desaparece de aquí.</p>
+        <p>Toca un par para abrirlo en Vinted. De algunos modelos quedan varias unidades y colores: pregúntame por el que buscas.</p>
       </div>
       <div class="filtros" role="group" aria-label="Filtrar por estilo" id="filtros"></div>
       <div class="grid" id="grid"></div>
@@ -259,16 +248,18 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <section class="historia" id="historia">
     <div class="wrap">
-      <div class="img">
-        <img src="img/9455017316-1.webp" alt="Pendientes Cleopatra de filigrana dorada con flecos" loading="lazy">
-        <span class="nota">Nunca estrenados</span>
+      <div class="rotulo">
+        <small>Mercería</small>
+        <strong>Paloma del Rocío</strong>
+        <span>Hilos · Botones · Complementos de flamenca</span>
+        <img src="img/9455017316-1.webp" alt="Pendientes Cleopatra de filigrana dorada en su cartón original" loading="lazy">
       </div>
       <div class="txt">
-        <span class="eyebrow">La firma</span>
-        <h2>Un cajón de pendientes que esperaba su feria</h2>
-        <p>Lunar de Melocotón nace de un lote de pendientes de flamenca guardados durante años: aros forrados de hilo, lágrimas de colores, filigranas doradas y flores en relieve. Todos nuevos, con su etiqueta y su cartón original.</p>
-        <p>Son modelos de otra época que hoy ya no se encuentran en tienda. Los fotografío uno a uno, les pongo nombre y los dejo listos para que vuelvan a bailar.</p>
-        <p>Comprar vintage es también la forma más sostenible de vestir de flamenca: no hace falta fabricar nada nuevo.</p>
+        <span class="ticket">La historia</span>
+        <h2>Lo que quedó en los cajones de mi abuela</h2>
+        <p>Mi abuela tenía una mercería, Paloma del Rocío. Entre hilos, botones y cremalleras vendía también lo que las vecinas buscaban antes de cada feria: pendientes de flamenca, peinas y flores.</p>
+        <p>Cuando la mercería cerró, en los cajones quedaron pendientes sin estrenar, muchos todavía en su cartón con la etiqueta. Aros forrados de hilo, lágrimas de colores, filigrana dorada y flores en relieve que hoy ya no se encuentran en tienda.</p>
+        <p>Lunar de Melocotón es mi forma de que vuelvan a salir a la feria. Los fotografío uno a uno y los vendo a precio de mercería, como lo habría hecho ella.</p>
       </div>
     </div>
   </section>
@@ -277,8 +268,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     <div class="wrap">
       <div class="head"><h2>Cómo <em>comprar</em></h2><p>La venta se hace en Vinted para que tu pago esté protegido.</p></div>
       <ol class="pasos">
-        <li><h3>Elige tu par</h3><p>Filtra por estilo y fíjate en el color de tu traje o tu mantón.</p></li>
-        <li><h3>Ábrelo en Vinted</h3><p>Pulsa en la foto. Verás el anuncio con más fotos y podrás preguntarme lo que quieras.</p></li>
+        <li><h3>Elige tu par</h3><p>Filtra por estilo y piensa en el color de tu traje o tu mantón.</p></li>
+        <li><h3>Ábrelo en Vinted</h3><p>Pulsa en la foto. Verás el anuncio con más fotos y podrás preguntarme por otros colores.</p></li>
         <li><h3>Compra con protección</h3><p>Pagas en Vinted y el dinero no me llega hasta que recibes los pendientes y das el visto bueno.</p></li>
       </ol>
     </div>
@@ -297,8 +288,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       <div class="resenas">
         <figure><blockquote>«super perfecto!!!»</blockquote><figcaption>lunadekaramelo23</figcaption></figure>
         <figure><blockquote>«muy bonito el top»</blockquote><figcaption>danielitaass</figcaption></figure>
-        <figure><blockquote>«parfait»</blockquote><figcaption>ophali <span>(«perfecto»)</span></figcaption></figure>
-        <figure><blockquote>«Correu tudo bem!»</blockquote><figcaption>t_m_f <span>(«¡Todo fue bien!»)</span></figcaption></figure>
+        <figure><blockquote>«parfait»</blockquote><figcaption>ophali · «perfecto»</figcaption></figure>
+        <figure><blockquote>«Correu tudo bem!»</blockquote><figcaption>t_m_f · «¡todo fue bien!»</figcaption></figure>
       </div>
       <p class="ver-todas"><a href="https://www.vinted.es/member/258138814?tab=feedback" target="_blank" rel="noopener">Ver todas las valoraciones en Vinted ↗</a></p>
     </div>
@@ -317,9 +308,9 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       </div>
       <div>
         <h2>Preguntas</h2>
-        <details><summary>¿Están usados?</summary><p>No. Son pendientes antiguos pero nuevos: la mayoría conservan la etiqueta o el cartón original.</p></details>
-        <details><summary>¿Hay más de un par de cada modelo?</summary><p>Casi siempre no. Algunos modelos, como Rosario, están en varios colores: cada color es un anuncio distinto.</p></details>
-        <details><summary>¿Hacéis lotes?</summary><p>Sí. Si te llevas varios pares, escríbeme por Vinted y te hago un lote con descuento en el envío.</p></details>
+        <details><summary>¿Están usados?</summary><p>No. Son pendientes antiguos pero nuevos: género de la mercería que nunca llegó a venderse. La mayoría conservan la etiqueta o el cartón.</p></details>
+        <details><summary>¿Hay más de un par de cada modelo?</summary><p>De algunos sí, y en varios colores. Si un modelo te gusta en otro tono o necesitas varios pares iguales, pregúntame por Vinted.</p></details>
+        <details><summary>¿Hacéis lotes?</summary><p>Sí. Si te llevas varios pares, escríbeme y te preparo un lote con el envío ajustado.</p></details>
         <details><summary>¿Cuánto tarda el envío?</summary><p>Los envío en uno o dos días laborables. El plazo de entrega depende del transportista que elijas en Vinted.</p></details>
       </div>
     </div>
@@ -329,11 +320,11 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     <div class="wrap">
       <div>
         <h2>¿Feria, Rocío o boda a la vista?</h2>
-        <p>Escríbeme por Vinted con el color de tu traje y te digo qué pares le van mejor.</p>
+        <p>Escríbeme por Vinted con el color de tu traje y te digo qué pares le van mejor, o si me queda otro tono.</p>
       </div>
       <div style="display:grid;gap:14px;justify-items:start">
         <span class="user">@mariepeachx06</span>
-        <a class="btn btn-melo" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Escríbeme en Vinted ↗</a>
+        <a class="btn" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Escríbeme en Vinted ↗</a>
       </div>
     </div>
   </section>
@@ -341,35 +332,36 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
 <footer>
   <div class="wrap">
-    <span>© 2026 Lunar de Melocotón · Pendientes de flamenca vintage</span>
+    <span>© 2026 Lunar de Melocotón · Herencia de la Mercería Paloma del Rocío</span>
     <span>Venta a través de Vinted</span>
   </div>
 </footer>
 
 <script>
-// Catálogo: cada pieza enlaza a su anuncio real en Vinted. Para quitar una vendida, borra su línea.
+// Catálogo: cada pieza enlaza a su anuncio real en Vinted. Para quitar una agotada, borra su línea.
+// b: tiene segunda foto · v: colores o unidades disponibles
 const V = "https://www.vinted.es/items/";
 const piezas = [
   {id:"9454868949", n:"Hada Madrina", c:"aros", p:6, b:true},
   {id:"9455099362", n:"Flora", c:"color", p:4, b:true},
   {id:"9454607013", n:"Alcazaba", c:"filigrana", p:6, b:true},
-  {id:"9454184181", n:"Vega", c:"lagrimas", p:4, b:true},
+  {id:"9454184181", n:"Vega", c:"lagrimas", p:4, b:true, v:"Varios colores"},
   {id:"9454990103", n:"Luna", c:"aros", p:6},
   {id:"9454622669", n:"Paloma", c:"filigrana", p:7, b:true},
-  {id:"9453699367", n:"Rosario Carmín · cierre click", c:"lagrimas", p:4, b:true},
+  {id:"9453699367", n:"Rosario Carmín · cierre click", c:"lagrimas", p:4, v:"Rojo y rosa"},
   {id:"9455073945", n:"Turquesa", c:"filigrana", p:4, b:true},
-  {id:"9454077366", n:"Ana", c:"filigrana", p:7},
-  {id:"9454670923", n:"Valeria", c:"aros", p:3},
-  {id:"9453717385", n:"Rosario Coral · cierre click", c:"lagrimas", p:4, b:true},
+  {id:"9454077366", n:"Ana", c:"filigrana", p:7, b:true},
+  {id:"9454670923", n:"Valeria", c:"aros", p:3, b:true, v:"3 colores"},
+  {id:"9453717385", n:"Rosario Coral · cierre click", c:"lagrimas", p:4, v:"Rojo y rosa"},
   {id:"9455027054", n:"Cleopatra I", c:"filigrana", p:5, b:true},
   {id:"9454724331", n:"Rocío", c:"filigrana", p:6, b:true},
   {id:"9454938328", n:"Esmeralda Verde", c:"aros", p:4},
-  {id:"9454008803", n:"Gema", c:"lagrimas", p:4},
+  {id:"9454008803", n:"Gema", c:"lagrimas", p:4, b:true, v:"Varios colores"},
   {id:"9454741425", n:"Nieves", c:"color", p:5, b:true},
   {id:"9454203094", n:"Rosa", c:"filigrana", p:5},
-  {id:"9454968822", n:"Esmeralda Azul", c:"aros", p:5},
-  {id:"9454122725", n:"María", c:"color", p:5},
-  {id:"9454925395", n:"Rosario Mini", c:"lagrimas", p:4, b:true},
+  {id:"9454968822", n:"Esmeralda Azul", c:"aros", p:5, b:true, v:"Varios colores"},
+  {id:"9454122725", n:"María", c:"color", p:5, b:true},
+  {id:"9454925395", n:"Rosario Mini", c:"lagrimas", p:4, b:true, v:"3 colores"},
   {id:"9454781440", n:"Valentina", c:"color", p:4},
   {id:"9455017316", n:"Cleopatra II", c:"filigrana", p:5},
 ];
@@ -385,12 +377,12 @@ function pinta(f){
       <div class="foto">
         <img class="a" src="img/${x.id}-1.webp" alt="Pendientes de flamenca ${x.n}" loading="lazy">
         ${x.b?`<img class="b" src="img/${x.id}-2.webp" alt="" loading="lazy">`:""}
-        <span class="num">Nº ${String(x.i+1).padStart(2,"0")}</span>
-        <span class="unica">Pieza única</span>
+        <span class="ref">REF. ${String(x.i+1).padStart(3,"0")}</span>
+        ${x.v?`<span class="colores">${x.v}</span>`:""}
       </div>
       <div class="info">
         <div><h3>${x.n}</h3><span class="col">${cols[x.c]}</span></div>
-        <span class="precio">${x.p} €</span>
+        <span class="precio">${x.p},00 €</span>
       </div>
       <span class="comprar">Comprar en Vinted ↗</span>
     </a>`).join("");
