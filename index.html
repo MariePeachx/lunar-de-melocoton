@@ -12,7 +12,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f39a7b'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%238e2f50'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 <style>
 /* Layout: escaparate de mercería — portada burdeos con lunares melocotón, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en melocotón */
 :root{
@@ -192,7 +192,12 @@ body{font-size:18px;
     url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.006' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .38 0 0 0 0 .2 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
   background-color:var(--cal)}
 h1,h2{letter-spacing:.005em}
-.hero h1{font-style:italic;font-size:clamp(2.8rem,6.6vw,5.2rem)}
+.hero h1{margin-top:18px;font-family:"Cormorant Garamond","Garamond",Georgia,serif;font-weight:400;line-height:1}
+.hero h1 .h1-a{display:block;font-style:italic;font-weight:400;font-size:clamp(2.9rem,6.4vw,5rem);letter-spacing:-.01em}
+.hero h1 .h1-filete{display:flex;align-items:center;gap:14px;width:min(320px,80%);margin:16px 0 14px;opacity:.75}
+.hero h1 .h1-filete::before,.hero h1 .h1-filete::after{content:"";flex:1;height:1px;background:currentColor}
+.hero h1 .h1-orn{font-size:1.1rem;line-height:1;font-style:normal}
+.hero h1 .h1-b{display:block;font-weight:500;font-size:clamp(1.05rem,2.1vw,1.5rem);letter-spacing:.32em;text-transform:uppercase}
 .hero .lead{font-size:1.22rem}
 .dicho{margin-top:22px;font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--mango)}
 .ticket{font-size:.95rem;letter-spacing:.08em;text-transform:none}
@@ -270,13 +275,13 @@ footer .wrap{font-style:italic}
     <div class="wrap">
       <div>
         <span class="ticket">Herencia de la Mercería Paloma del Rocío</span>
-        <h1>Pendientes de flamenca de los de antes</h1>
+        <h1><span class="h1-a">Pendientes de flamenca</span><span class="h1-filete" aria-hidden="true"><span class="h1-orn">❦</span></span><span class="h1-b">de los de antes</span></h1>
         <p class="lead">El último género de la mercería de mi abuela: pendientes de flamenca nuevos, con su etiqueta y su cartón, guardados desde que cerró la tienda. Modelos que ya no se fabrican, a precio de mercería.</p>
         <div class="ctas">
           <a class="btn btn-rosa" href="#coleccion">Ver la colección</a>
           <a class="btn btn-linea" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Comprar en Vinted ↗</a>
         </div>
-        <p class="dicho">Para la feria, la romería y el camino</p>
+        <p class="dicho">Para la feria, la romería, el camino y tus eventos</p>
       </div>
       <div class="collage" aria-hidden="true">
         <figure class="f1"><img src="img/9454607013-1.webp?v=5" alt=""><figcaption>Alcazaba</figcaption></figure>
@@ -382,8 +387,8 @@ footer .wrap{font-style:italic}
   <section class="cierre" id="contacto">
     <div class="wrap">
       <div>
-        <h2>¿Feria, Rocío o boda a la vista?</h2>
-        <p>Escríbeme por Vinted con el color de tu traje y te digo qué pares le van mejor, o si me queda otro tono.</p>
+        <h2>¿Feria, Rocío, boda o evento a la vista?</h2>
+        <p>Escríbeme por Vinted con el color de tu traje o tu vestido y te digo qué pares le van mejor, o si me queda otro tono.</p>
       </div>
       <div style="display:grid;gap:14px;justify-items:start">
         <span class="user">@mariepeachx06</span>
