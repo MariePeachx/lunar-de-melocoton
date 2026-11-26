@@ -9,21 +9,22 @@
 <meta property="og:title" content="Lunar de Melocotón · Pendientes de flamenca vintage">
 <meta property="og:description" content="El último género de la Mercería Paloma del Rocío, nuevo con etiqueta. Compra segura en Vinted.">
 <meta property="og:image" content="img/9454868949-1.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%232445a6'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23e0a33a'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23ec4f86'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23ffb35c'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: escaparate de mercería — cabecera en azul cobalto con azulejo, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en albero */
+/* Layout: escaparate de mercería — portada rosa suave con lunares, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en menta */
 :root{
-  --cal:#f6f4f0;
+  --cal:#fff6f7;
   --papel:#ffffff;
-  --tinta:#18203a;
-  --gris:#5d6378;
-  --cobalto:#2445a6;
-  --cobalto-osc:#1a3380;
-  --albero:#e0a33a;
-  --linea:#e2dfd8;
+  --tinta:#3b1d2c;
+  --gris:#7d5e6c;
+  --rosa:#ec4f86;
+  --rosa-suave:#ffd6e2;
+  --menta:#bdeedd;
+  --mango:#ffb35c;
+  --linea:#f4dde4;
   --clara:#fbfaf7;
   --display:"Gloock","Didot",Georgia,serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
@@ -37,41 +38,36 @@ img{max-width:100%;display:block}
 a{color:inherit}
 h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.06;margin:0;text-wrap:balance}
 p{margin:0}
-:focus-visible{outline:3px solid var(--albero);outline-offset:3px;border-radius:4px}
+:focus-visible{outline:3px solid var(--mango);outline-offset:3px;border-radius:4px}
 .wrap{max-width:1200px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left,0px));padding-right:max(18px,env(safe-area-inset-right,0px))}
 .ticket{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
 
-.azulejo{background-color:var(--cobalto);
-  background-image:
-    radial-gradient(circle at 50% 50%, rgba(224,163,58,.95) 0 5px, transparent 6px),
-    radial-gradient(circle at 50% 50%, transparent 0 17px, rgba(255,255,255,.16) 18px 19px, transparent 20px),
-    linear-gradient(45deg, transparent 47%, rgba(255,255,255,.10) 48% 52%, transparent 53%),
-    linear-gradient(-45deg, transparent 47%, rgba(255,255,255,.10) 48% 52%, transparent 53%);
-  background-size:64px 64px}
+.lunares{background-color:var(--rosa-suave);
+  background-image:radial-gradient(circle,rgba(236,79,134,.55) 0 6px,transparent 7px),radial-gradient(circle,rgba(255,255,255,.9) 0 6px,transparent 7px);
+  background-size:60px 60px;background-position:0 0,30px 30px}
 
-.top{position:sticky;top:0;z-index:20;background:var(--tinta);color:var(--clara);padding-top:env(safe-area-inset-top,0px)}
+.top{position:sticky;top:0;z-index:20;background:var(--papel);color:var(--tinta);border-bottom:1px solid var(--linea);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:12px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo svg{width:32px;height:32px;flex:none}
 .logo b{font-family:var(--display);font-weight:400;font-size:1.3rem}
 .top nav{display:flex;gap:22px;font-weight:600;font-size:.92rem;flex-wrap:wrap}
 .top nav a{text-decoration:none;opacity:.8}
-.top nav a:hover{opacity:1;color:var(--albero)}
+.top nav a:hover{opacity:1;color:var(--rosa)}
 
-.hero{color:var(--clara);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--cobalto-osc) 34%,rgba(26,51,128,.88) 55%,rgba(26,51,128,.25))}
+.hero{color:var(--tinta);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--rosa-suave) 36%,rgba(255,214,226,.85) 56%,rgba(255,214,226,.2))}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding-block:76px 88px}
-.hero .ticket{color:var(--albero)}
+.hero .ticket{color:var(--rosa)}
 .hero h1{font-size:clamp(2.7rem,6.4vw,5rem);margin-top:16px}
-.hero h1 span{color:var(--albero)}
-.hero .lead{font-size:1.14rem;max-width:40ch;margin-top:20px;opacity:.92}
+.hero .lead{font-size:1.14rem;max-width:40ch;margin-top:20px;color:var(--gris)}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.96rem;text-decoration:none;border:2px solid transparent;transition:transform .15s;cursor:pointer}
 .btn:hover{transform:translateY(-2px)}
-.btn-albero{background:var(--albero);color:var(--tinta)}
-.btn-linea{border-color:var(--clara);color:var(--clara)}
+.btn-rosa{background:var(--rosa);color:#fff;box-shadow:0 8px 20px rgba(236,79,134,.3)}
+.btn-linea{border-color:var(--tinta);color:var(--tinta);background:var(--papel)}
 .collage{position:relative;height:470px}
-.collage figure{position:absolute;margin:0;width:54%;background:var(--papel);padding:10px 10px 36px;box-shadow:0 22px 44px rgba(10,16,40,.4);border-radius:2px}
+.collage figure{position:absolute;margin:0;width:54%;background:var(--papel);padding:10px 10px 36px;box-shadow:0 20px 40px rgba(120,30,70,.22);border-radius:2px}
 .collage figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
 .collage figcaption{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)}
 .collage .f1{left:0;top:36px;transform:rotate(-6deg)}
@@ -93,13 +89,13 @@ p{margin:0}
 section{padding-block:84px;scroll-margin-top:60px}
 .head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:30px}
 .head h2{font-size:clamp(2.1rem,4.6vw,3.3rem)}
-.head h2 em{font-style:normal;color:var(--cobalto)}
+.head h2 em{font-style:normal}
 .head p{max-width:46ch;color:var(--gris)}
 
 .filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px}
 .filtros button{font:inherit;font-weight:600;font-size:.9rem;padding:9px 18px;border-radius:999px;border:1.5px solid var(--linea);background:var(--papel);color:var(--tinta);cursor:pointer}
 .filtros button .n{opacity:.5;font-family:var(--mono);font-size:.8rem;margin-left:6px}
-.filtros button[aria-pressed="true"]{background:var(--cobalto);border-color:var(--cobalto);color:var(--clara)}
+.filtros button[aria-pressed="true"]{background:var(--rosa);border-color:var(--rosa);color:var(--clara)}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:30px 22px}
 .card{display:flex;flex-direction:column;text-decoration:none;color:inherit}
 .card .foto{position:relative;aspect-ratio:4/5;overflow:hidden;border-radius:3px;background:#efece7}
@@ -108,67 +104,67 @@ section{padding-block:84px;scroll-margin-top:60px}
 .card:hover .foto img.b{opacity:1}
 .card:hover .foto img.a{transform:scale(1.05)}
 .card .ref{position:absolute;left:12px;top:12px;font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;color:var(--gris)}
-.card .colores{position:absolute;right:10px;top:10px;background:var(--papel);color:var(--cobalto);font-size:.7rem;font-weight:700;padding:4px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card .colores{position:absolute;right:10px;top:10px;background:var(--papel);color:var(--rosa);font-size:.7rem;font-weight:700;padding:4px 9px;border-radius:999px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
 .card .info{display:flex;justify-content:space-between;gap:12px;padding-top:14px;align-items:flex-start}
 .card h3{font-family:var(--body);font-weight:700;font-size:1.04rem;line-height:1.3}
 .card .col{font-size:.84rem;color:var(--gris)}
 .card .precio{font-family:var(--mono);font-weight:500;font-size:1rem;white-space:nowrap;border:1.5px dashed var(--tinta);padding:3px 9px;border-radius:3px;transform:rotate(2deg)}
-.card .comprar{margin-top:10px;font-size:.88rem;font-weight:700;color:var(--cobalto);text-decoration:underline;text-underline-offset:3px}
+.card .comprar{margin-top:10px;font-size:.88rem;font-weight:700;color:var(--rosa);text-decoration:underline;text-underline-offset:3px}
 
 .historia{background:var(--papel);border-block:1px solid var(--linea)}
 .historia .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
-.rotulo{border:2px solid var(--tinta);padding:34px 28px;text-align:center;position:relative;background:var(--cal)}
-.rotulo::before{content:"";position:absolute;inset:8px;border:1px solid var(--tinta);pointer-events:none}
+.rotulo{border:2px solid var(--rosa);padding:34px 28px;text-align:center;position:relative;background:var(--rosa-suave)}
+.rotulo::before{content:"";position:absolute;inset:8px;border:1px solid var(--rosa);pointer-events:none}
 .rotulo small{display:block;font-family:var(--mono);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gris)}
-.rotulo strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;margin-block:12px;color:var(--cobalto)}
+.rotulo strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;margin-block:12px;color:var(--tinta)}
 .rotulo span{font-family:var(--mono);font-size:.8rem;letter-spacing:.14em;text-transform:uppercase}
 .rotulo img{margin:26px auto 0;width:62%;aspect-ratio:4/5;object-fit:cover;border-radius:2px}
 .historia .txt{display:grid;gap:16px;max-width:60ch}
-.historia .ticket{color:var(--cobalto)}
+.historia .ticket{color:var(--rosa)}
 .historia h2{font-size:clamp(2rem,4vw,3rem)}
 .historia p{color:var(--gris);font-size:1.05rem}
 
 .pasos{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;counter-reset:p}
 .pasos li{counter-increment:p;border-top:2px solid var(--tinta);padding-top:18px;min-width:0}
-.pasos li::before{content:"0" counter(p);font-family:var(--mono);font-size:.85rem;color:var(--cobalto);display:block;margin-bottom:10px;letter-spacing:.1em}
+.pasos li::before{content:"0" counter(p);font-family:var(--mono);font-size:.85rem;color:var(--rosa);display:block;margin-bottom:10px;letter-spacing:.1em}
 .pasos h3{font-family:var(--body);font-weight:700;font-size:1.12rem;margin-bottom:6px}
 .pasos p{color:var(--gris)}
 
 .opiniones{padding-top:0}
 .nota-media{display:grid;grid-template-columns:auto auto;gap:2px 14px;align-items:center}
-.media{font-family:var(--display);font-size:3.3rem;line-height:1;color:var(--cobalto);grid-row:span 2}
+.media{font-family:var(--display);font-size:3.3rem;line-height:1;color:var(--rosa);grid-row:span 2}
 .media small{font-size:1.2rem;color:var(--gris)}
-.estrellas{color:var(--albero);font-size:1.3rem;letter-spacing:.1em}
-.media-estrella{background:linear-gradient(90deg,var(--albero) 50%,var(--linea) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.estrellas{color:var(--mango);font-size:1.3rem;letter-spacing:.1em}
+.media-estrella{background:linear-gradient(90deg,var(--mango) 50%,var(--linea) 50%);-webkit-background-clip:text;background-clip:text;color:transparent}
 .fuente{font-size:.84rem;color:var(--gris);max-width:26ch}
 .resenas{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .resenas figure{margin:0;background:var(--papel);border:1px solid var(--linea);border-radius:4px;padding:24px 20px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;min-width:0}
 .resenas blockquote{margin:0;font-family:var(--display);font-size:1.45rem;line-height:1.2}
 .resenas figcaption{font-family:var(--mono);font-size:.78rem;color:var(--gris)}
 .ver-todas{margin-top:22px}
-.ver-todas a{font-weight:700;color:var(--cobalto);text-underline-offset:3px}
+.ver-todas a{font-weight:700;color:var(--rosa);text-underline-offset:3px}
 
 .dos{display:grid;grid-template-columns:1fr 1fr;gap:60px}
 .dos>div{min-width:0}
 .dos h2{font-size:clamp(1.9rem,3.6vw,2.5rem);margin-bottom:20px}
 .cuid{list-style:none;padding:0;margin:0;display:grid;gap:14px}
 .cuid li{display:grid;grid-template-columns:18px 1fr;gap:12px}
-.cuid li::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--albero);margin-top:8px}
+.cuid li::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--mango);margin-top:8px}
 details{border-bottom:1px solid var(--linea);padding-block:15px}
 summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:12px}
 summary::-webkit-details-marker{display:none}
-summary::after{content:"+";color:var(--cobalto);font-size:1.4rem;line-height:1}
+summary::after{content:"+";color:var(--rosa);font-size:1.4rem;line-height:1}
 details[open] summary::after{content:"–"}
 details p{margin-top:8px;color:var(--gris)}
 
-.cierre{background:var(--albero);color:var(--tinta)}
+.cierre{background:var(--menta);color:var(--tinta)}
 .cierre .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
 .cierre h2{font-size:clamp(2rem,4.6vw,3.3rem)}
 .cierre p{margin-top:14px;max-width:46ch}
-.cierre .btn{background:var(--tinta);color:var(--clara)}
+.cierre .btn{background:var(--rosa);color:#fff}
 .cierre .user{font-family:var(--mono);font-size:1.3rem;font-weight:500}
 
-footer{background:var(--tinta);color:var(--clara)}
+footer{background:var(--tinta);color:var(--rosa-suave)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));font-size:.88rem;opacity:.85}
 
 @media (max-width:900px){
@@ -193,7 +189,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="Lunar de Melocotón, inicio">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#2445a6"/><circle cx="16" cy="16" r="11" fill="none" stroke="#fbfaf7" stroke-width="1" opacity=".5"/><circle cx="16" cy="16" r="5.5" fill="#e0a33a"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#ec4f86"/><circle cx="16" cy="16" r="11" fill="none" stroke="#fff" stroke-width="1" opacity=".7"/><circle cx="16" cy="16" r="5.5" fill="#ffb35c"/></svg>
       <b>Lunar de Melocotón</b>
     </a>
     <nav aria-label="Principal">
@@ -207,14 +203,14 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 </header>
 
 <main id="inicio">
-  <section class="hero azulejo" style="padding-block:0">
+  <section class="hero lunares" style="padding-block:0">
     <div class="wrap">
       <div>
         <span class="ticket">Herencia de la Mercería Paloma del Rocío</span>
-        <h1>Pendientes de flamenca <span>de los de antes</span></h1>
+        <h1>Pendientes de flamenca de los de antes</h1>
         <p class="lead">El último género de la mercería de mi abuela: pendientes de flamenca nuevos, con su etiqueta y su cartón, guardados desde que cerró la tienda. Modelos que ya no se fabrican, a precio de mercería.</p>
         <div class="ctas">
-          <a class="btn btn-albero" href="#coleccion">Ver la colección</a>
+          <a class="btn btn-rosa" href="#coleccion">Ver la colección</a>
           <a class="btn btn-linea" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Comprar en Vinted ↗</a>
         </div>
       </div>
@@ -228,17 +224,17 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <div class="ventajas">
     <ul class="wrap">
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#2445a6" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#2445a6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Género de tienda, sin estrenar</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="9" cy="15" r="5" fill="#e0a33a"/><circle cx="21" cy="15" r="5" fill="#2445a6"/></svg><div><b>Varios colores</b><span>Algunos modelos en más de un tono</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#2445a6" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#2445a6" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#2445a6" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#2445a6"/><circle cx="23" cy="23" r="2.2" fill="#2445a6"/></svg><div><b>Envío desde Málaga</b><span>A toda España</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#ec4f86" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#ec4f86" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Género de tienda, sin estrenar</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="9" cy="15" r="5" fill="#ffb35c"/><circle cx="21" cy="15" r="5" fill="#ec4f86"/></svg><div><b>Varios colores</b><span>Algunos modelos en más de un tono</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#ec4f86" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#ec4f86" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#ec4f86" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#ec4f86"/><circle cx="23" cy="23" r="2.2" fill="#ec4f86"/></svg><div><b>Envío desde Málaga</b><span>A toda España</span></div></li>
     </ul>
   </div>
 
   <section id="coleccion">
     <div class="wrap">
       <div class="head">
-        <h2>La <em>colección</em></h2>
+        <h2>La colección</h2>
         <p>Toca un par para abrirlo en Vinted. De algunos modelos quedan varias unidades y colores: pregúntame por el que buscas.</p>
       </div>
       <div class="filtros" role="group" aria-label="Filtrar por estilo" id="filtros"></div>
@@ -266,7 +262,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <section id="comprar">
     <div class="wrap">
-      <div class="head"><h2>Cómo <em>comprar</em></h2><p>La venta se hace en Vinted para que tu pago esté protegido.</p></div>
+      <div class="head"><h2>Cómo comprar</h2><p>La venta se hace en Vinted para que tu pago esté protegido.</p></div>
       <ol class="pasos">
         <li><h3>Elige tu par</h3><p>Filtra por estilo y piensa en el color de tu traje o tu mantón.</p></li>
         <li><h3>Ábrelo en Vinted</h3><p>Pulsa en la foto. Verás el anuncio con más fotos y podrás preguntarme por otros colores.</p></li>
@@ -278,7 +274,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   <section class="opiniones" id="opiniones">
     <div class="wrap">
       <div class="head">
-        <h2>Lo que dicen <em>en Vinted</em></h2>
+        <h2>Lo que dicen en Vinted</h2>
         <div class="nota-media">
           <span class="media">4,5<small>/5</small></span>
           <span class="estrellas" aria-label="4,5 de 5 estrellas">★★★★<span class="media-estrella">★</span></span>
@@ -344,23 +340,23 @@ const V = "https://www.vinted.es/items/";
 const piezas = [
   {id:"9454868949", n:"Hada Madrina", c:"aros", p:6, b:true},
   {id:"9455099362", n:"Flora", c:"color", p:4, b:true},
-  {id:"9454607013", n:"Alcazaba", c:"filigrana", p:6, b:true},
+  {id:"9454607013", n:"Alcazaba", c:"filigrana", p:6},
   {id:"9454184181", n:"Vega", c:"lagrimas", p:4, b:true, v:"Varios colores"},
   {id:"9454990103", n:"Luna", c:"aros", p:6},
-  {id:"9454622669", n:"Paloma", c:"filigrana", p:7, b:true},
+  {id:"9454622669", n:"Paloma", c:"filigrana", p:7},
   {id:"9453699367", n:"Rosario Carmín · cierre click", c:"lagrimas", p:4, v:"Rojo y rosa"},
-  {id:"9455073945", n:"Turquesa", c:"filigrana", p:4, b:true},
-  {id:"9454077366", n:"Ana", c:"filigrana", p:7, b:true},
+  {id:"9455073945", n:"Turquesa", c:"filigrana", p:4},
+  {id:"9454077366", n:"Ana", c:"filigrana", p:7},
   {id:"9454670923", n:"Valeria", c:"aros", p:3, b:true, v:"3 colores"},
   {id:"9453717385", n:"Rosario Coral · cierre click", c:"lagrimas", p:4, v:"Rojo y rosa"},
   {id:"9455027054", n:"Cleopatra I", c:"filigrana", p:5, b:true},
-  {id:"9454724331", n:"Rocío", c:"filigrana", p:6, b:true},
+  {id:"9454724331", n:"Rocío", c:"filigrana", p:6, b:true, v:"Varios colores"},
   {id:"9454938328", n:"Esmeralda Verde", c:"aros", p:4},
   {id:"9454008803", n:"Gema", c:"lagrimas", p:4, b:true, v:"Varios colores"},
-  {id:"9454741425", n:"Nieves", c:"color", p:5, b:true},
+  {id:"9454741425", n:"Nieves", c:"color", p:5},
   {id:"9454203094", n:"Rosa", c:"filigrana", p:5},
   {id:"9454968822", n:"Esmeralda Azul", c:"aros", p:5, b:true, v:"Varios colores"},
-  {id:"9454122725", n:"María", c:"color", p:5, b:true},
+  {id:"9454122725", n:"María", c:"color", p:5, b:true, v:"Varios colores"},
   {id:"9454925395", n:"Rosario Mini", c:"lagrimas", p:4, b:true, v:"3 colores"},
   {id:"9454781440", n:"Valentina", c:"color", p:4},
   {id:"9455017316", n:"Cleopatra II", c:"filigrana", p:5},
