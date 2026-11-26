@@ -12,24 +12,25 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f39a7b'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%238e2f50'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
 <style>
 /* Layout: escaparate de mercería — portada burdeos con lunares melocotón, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en melocotón */
 :root{
-  --cal:#fdf6f2;
-  --papel:#ffffff;
+  --cal:#f2e4cf;
+  --papel:#fbf3e6;
   --tinta:#3a1a26;
-  --gris:#7b5a5e;
+  --gris:#6c5049;
   --rosa:#a8385e;
   --rosa-suave:#8e2f50;
   --menta:#f39a7b;
-  --melo-claro:#fde6dc;
+  --melo-claro:#f6dccb;
+  --marisma:#6f7a55;
   --mango:#f39a7b;
-  --linea:#efdcd5;
+  --linea:#e0c9ab;
   --clara:#fff4ee;
-  --display:"Gloock","Didot",Georgia,serif;
-  --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"DM Mono",ui-monospace,Consolas,monospace;
+  --display:"IM Fell English","Garamond",Georgia,serif;
+  --body:"EB Garamond","Garamond",Georgia,serif;
+  --mono:"IM Fell English SC","Garamond",Georgia,serif;
   color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -183,6 +184,67 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
   .collage{height:330px}
   section{padding-block:62px}
 }
+
+/* ---------- Estética Rocío envejecida ---------- */
+body{font-size:18px;
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .28 0 0 0 0 .16 0 0 0 .2 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.006' numOctaves='3' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 .55 0 0 0 0 .38 0 0 0 0 .2 0 0 0 .16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+  background-color:var(--cal)}
+h1,h2{letter-spacing:.005em}
+.hero h1{font-style:italic;font-size:clamp(2.8rem,6.6vw,5.2rem)}
+.hero .lead{font-size:1.22rem}
+.dicho{margin-top:22px;font-family:var(--display);font-style:italic;font-size:1.35rem;color:var(--mango)}
+.ticket{font-size:.95rem;letter-spacing:.08em;text-transform:none}
+.hero.lunares{background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .1 0 0 0 0 .02 0 0 0 0 .05 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),
+    radial-gradient(circle,rgba(243,154,123,.55) 0 6px,transparent 7px),radial-gradient(circle,rgba(243,154,123,.55) 0 6px,transparent 7px)}
+.hero.lunares{background-size:240px 240px,60px 60px,60px 60px;background-position:0 0,0 0,30px 30px}
+.hero::before{background:radial-gradient(ellipse at 30% 50%,var(--rosa-suave) 35%,rgba(142,47,80,.82) 65%,rgba(80,20,40,.55))}
+/* puntilla festoneada */
+.encaje{height:22px;margin-top:-1px;
+  background:
+    radial-gradient(circle at 50% 0,var(--rosa-suave) 11px,transparent 12px) 0 0/26px 22px repeat-x,
+    radial-gradient(circle at 50% 5px,rgba(243,154,123,.9) 2px,transparent 2.6px) 0 0/26px 22px repeat-x}
+.encaje.arriba{margin-top:0;margin-bottom:-1px;
+  background:radial-gradient(circle at 50% 100%,var(--menta) 11px,transparent 12px) 0 0/26px 22px repeat-x}
+.ventajas{background:transparent;border-bottom:1px solid var(--linea)}
+.ventajas li b{font-family:var(--display);font-weight:400;font-size:1.15rem}
+/* títulos con adorno */
+.head h2::after{content:"❦";display:block;font-size:1.3rem;color:var(--mango);margin-top:6px;font-style:normal}
+.head h2{font-style:italic}
+/* fotos como postales antiguas (sin tocar el color del pendiente) */
+.card .foto{border:9px solid var(--papel);border-radius:2px;background:var(--papel);
+  box-shadow:0 0 0 1px var(--linea),0 2px 3px rgba(70,40,20,.18),0 14px 26px rgba(70,40,20,.12)}
+.card:nth-child(3n+1) .foto{transform:rotate(-.6deg)}
+.card:nth-child(3n+2) .foto{transform:rotate(.5deg)}
+.card h3{font-family:var(--display);font-weight:400;font-size:1.35rem}
+.card .col{font-style:italic;font-size:1rem}
+.card .ref{background:var(--papel);padding:1px 6px;font-size:.8rem;letter-spacing:.04em}
+.card .colores{font-family:var(--mono);font-weight:400;font-size:.85rem;background:var(--papel)}
+.card .precio{font-family:var(--display);font-size:1.25rem;border-color:var(--gris);background:var(--papel)}
+.card .comprar{font-style:italic;font-size:1.02rem}
+.filtros button{font-family:var(--display);font-size:1.05rem;background:var(--papel);border-color:var(--linea)}
+.collage figure{background:var(--papel);box-shadow:0 0 0 1px rgba(0,0,0,.08),0 18px 40px rgba(40,10,20,.4)}
+.collage figcaption{font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:1.05rem}
+/* rótulo de la mercería con doble filete */
+.historia{background:rgba(251,243,230,.55)}
+.rotulo{background:var(--melo-claro);border:3px double var(--rosa)}
+.rotulo strong{font-style:italic}
+.rotulo span{font-size:1rem;letter-spacing:.06em;text-transform:none}
+.rotulo small{font-size:1rem;letter-spacing:.25em;text-transform:none}
+.rotulo img{border:8px solid var(--papel);box-shadow:0 6px 16px rgba(70,40,20,.2)}
+.historia p,.head p,.pasos p,.cuid p,details p{font-size:1.08rem}
+.pasos li{border-top:1px solid var(--rosa)}
+.pasos li::before{font-size:1.1rem}
+.pasos h3{font-family:var(--display);font-weight:400;font-size:1.4rem}
+.resenas figure{background:var(--papel);border-color:var(--linea)}
+.resenas blockquote{font-style:italic}
+summary{font-family:var(--display);font-weight:400;font-size:1.15rem}
+.dos h2{font-style:italic}
+.cierre h2{font-style:italic}
+.cierre .user{font-size:1.4rem}
+footer .wrap{font-style:italic}
 </style>
 </head>
 <body>
@@ -214,6 +276,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
           <a class="btn btn-rosa" href="#coleccion">Ver la colección</a>
           <a class="btn btn-linea" href="https://www.vinted.es/member/258138814" target="_blank" rel="noopener">Comprar en Vinted ↗</a>
         </div>
+        <p class="dicho">Para la feria, la romería y el camino</p>
       </div>
       <div class="collage" aria-hidden="true">
         <figure class="f1"><img src="img/9454607013-1.webp?v=5" alt=""><figcaption>Alcazaba</figcaption></figure>
@@ -222,6 +285,8 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
       </div>
     </div>
   </section>
+
+  <div class="encaje" aria-hidden="true"></div>
 
   <div class="ventajas">
     <ul class="wrap">
@@ -313,6 +378,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
     </div>
   </section>
 
+  <div class="encaje arriba" aria-hidden="true"></div>
   <section class="cierre" id="contacto">
     <div class="wrap">
       <div>
