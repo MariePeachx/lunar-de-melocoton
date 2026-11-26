@@ -9,23 +9,24 @@
 <meta property="og:title" content="Lunar de Melocotón · Pendientes de flamenca vintage">
 <meta property="og:description" content="El último género de la Mercería Paloma del Rocío, nuevo con etiqueta. Compra segura en Vinted.">
 <meta property="og:image" content="img/9454868949-1.webp?v=5">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23ec4f86'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%23ffb35c'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23f39a7b'/%3E%3Ccircle cx='16' cy='16' r='5.5' fill='%235a0f22'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gloock&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: escaparate de mercería — portada rosa suave con lunares, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en menta */
+/* Layout: escaparate de mercería — portada burdeos con lunares melocotón, rejilla de fotos de estudio con etiqueta de precio tipo ticket, cierre en melocotón */
 :root{
-  --cal:#fff6f7;
+  --cal:#fdf6f2;
   --papel:#ffffff;
-  --tinta:#3b1d2c;
-  --gris:#7d5e6c;
-  --rosa:#ec4f86;
-  --rosa-suave:#ffd6e2;
-  --menta:#bdeedd;
-  --mango:#ffb35c;
-  --linea:#f4dde4;
-  --clara:#fbfaf7;
+  --tinta:#2b1016;
+  --gris:#7b5a5e;
+  --rosa:#7a1630;
+  --rosa-suave:#5a0f22;
+  --menta:#f39a7b;
+  --melo-claro:#fde6dc;
+  --mango:#f39a7b;
+  --linea:#efdcd5;
+  --clara:#fff4ee;
   --display:"Gloock","Didot",Georgia,serif;
   --body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
   --mono:"DM Mono",ui-monospace,Consolas,monospace;
@@ -43,31 +44,31 @@ p{margin:0}
 .ticket{font-family:var(--mono);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase}
 
 .lunares{background-color:var(--rosa-suave);
-  background-image:radial-gradient(circle,rgba(236,79,134,.55) 0 6px,transparent 7px),radial-gradient(circle,rgba(255,255,255,.9) 0 6px,transparent 7px);
+  background-image:radial-gradient(circle,rgba(243,154,123,.9) 0 6px,transparent 7px),radial-gradient(circle,rgba(243,154,123,.9) 0 6px,transparent 7px);
   background-size:60px 60px;background-position:0 0,30px 30px}
 
-.top{position:sticky;top:0;z-index:20;background:var(--papel);color:var(--tinta);border-bottom:1px solid var(--linea);padding-top:env(safe-area-inset-top,0px)}
+.top{position:sticky;top:0;z-index:20;background:var(--rosa-suave);color:var(--clara);padding-top:env(safe-area-inset-top,0px)}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;padding-block:12px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
 .logo svg{width:32px;height:32px;flex:none}
 .logo b{font-family:var(--display);font-weight:400;font-size:1.3rem}
 .top nav{display:flex;gap:22px;font-weight:600;font-size:.92rem;flex-wrap:wrap}
 .top nav a{text-decoration:none;opacity:.8}
-.top nav a:hover{opacity:1;color:var(--rosa)}
+.top nav a:hover{opacity:1;color:var(--mango)}
 
-.hero{color:var(--tinta);position:relative;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--rosa-suave) 36%,rgba(255,214,226,.85) 56%,rgba(255,214,226,.2))}
+.hero{color:var(--clara);position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,var(--rosa-suave) 32%,rgba(90,15,34,.86) 54%,rgba(90,15,34,.35))}
 .hero .wrap{position:relative;display:grid;grid-template-columns:1.05fr 1fr;gap:44px;align-items:center;padding-block:76px 88px}
-.hero .ticket{color:var(--rosa)}
+.hero .ticket{color:var(--mango)}
 .hero h1{font-size:clamp(2.7rem,6.4vw,5rem);margin-top:16px}
-.hero .lead{font-size:1.14rem;max-width:40ch;margin-top:20px;color:var(--gris)}
+.hero .lead{font-size:1.14rem;max-width:40ch;margin-top:20px;opacity:.9}
 .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-weight:700;font-size:.96rem;text-decoration:none;border:2px solid transparent;transition:transform .15s;cursor:pointer}
 .btn:hover{transform:translateY(-2px)}
-.btn-rosa{background:var(--rosa);color:#fff;box-shadow:0 8px 20px rgba(236,79,134,.3)}
-.btn-linea{border-color:var(--tinta);color:var(--tinta);background:var(--papel)}
+.btn-rosa{background:var(--mango);color:var(--rosa-suave)}
+.btn-linea{border-color:var(--clara);color:var(--clara)}
 .collage{position:relative;height:470px}
-.collage figure{position:absolute;margin:0;width:54%;background:var(--papel);padding:10px 10px 36px;box-shadow:0 20px 40px rgba(120,30,70,.22);border-radius:2px}
+.collage figure{position:absolute;margin:0;width:54%;background:var(--papel);padding:10px 10px 36px;box-shadow:0 18px 40px rgba(0,0,0,.35);border-radius:2px}
 .collage figure img{aspect-ratio:4/5;object-fit:cover;width:100%}
 .collage figcaption{position:absolute;bottom:9px;left:0;right:0;text-align:center;font-family:var(--mono);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta)}
 .collage .f1{left:0;top:36px;transform:rotate(-6deg)}
@@ -113,7 +114,7 @@ section{padding-block:84px;scroll-margin-top:60px}
 
 .historia{background:var(--papel);border-block:1px solid var(--linea)}
 .historia .wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center}
-.rotulo{border:2px solid var(--rosa);padding:34px 28px;text-align:center;position:relative;background:var(--rosa-suave)}
+.rotulo{border:2px solid var(--rosa);padding:34px 28px;text-align:center;position:relative;background:var(--melo-claro)}
 .rotulo::before{content:"";position:absolute;inset:8px;border:1px solid var(--rosa);pointer-events:none}
 .rotulo small{display:block;font-family:var(--mono);font-size:.78rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gris)}
 .rotulo strong{display:block;font-family:var(--display);font-weight:400;font-size:clamp(2.2rem,5vw,3.4rem);line-height:1;margin-block:12px;color:var(--tinta)}
@@ -161,10 +162,10 @@ details p{margin-top:8px;color:var(--gris)}
 .cierre .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:36px;align-items:center}
 .cierre h2{font-size:clamp(2rem,4.6vw,3.3rem)}
 .cierre p{margin-top:14px;max-width:46ch}
-.cierre .btn{background:var(--rosa);color:#fff}
+.cierre .btn{background:var(--rosa-suave);color:var(--clara)}
 .cierre .user{font-family:var(--mono);font-size:1.3rem;font-weight:500}
 
-footer{background:var(--tinta);color:var(--rosa-suave)}
+footer{background:var(--rosa-suave);color:var(--clara)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:26px calc(26px + env(safe-area-inset-bottom,0px));font-size:.88rem;opacity:.85}
 
 @media (max-width:900px){
@@ -189,7 +190,7 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 <header class="top">
   <div class="wrap">
     <a class="logo" href="#inicio" aria-label="Lunar de Melocotón, inicio">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#ec4f86"/><circle cx="16" cy="16" r="11" fill="none" stroke="#fff" stroke-width="1" opacity=".7"/><circle cx="16" cy="16" r="5.5" fill="#ffb35c"/></svg>
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="15" fill="#f39a7b"/><circle cx="16" cy="16" r="11" fill="none" stroke="#fff" stroke-width="1" opacity=".7"/><circle cx="16" cy="16" r="5.5" fill="#5a0f22"/></svg>
       <b>Lunar de Melocotón</b>
     </a>
     <nav aria-label="Principal">
@@ -224,10 +225,10 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
 
   <div class="ventajas">
     <ul class="wrap">
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#ec4f86" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#ec4f86" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Género de tienda, sin estrenar</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="9" cy="15" r="5" fill="#ffb35c"/><circle cx="21" cy="15" r="5" fill="#ec4f86"/></svg><div><b>Varios colores</b><span>Algunos modelos en más de un tono</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#ec4f86" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
-      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#ec4f86" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#ec4f86" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#ec4f86"/><circle cx="23" cy="23" r="2.2" fill="#ec4f86"/></svg><div><b>Envío desde Málaga</b><span>A toda España</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="15" cy="15" r="13" fill="none" stroke="#7a1630" stroke-width="2"/><path d="M9 15.5l4 4 8-9" fill="none" stroke="#7a1630" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg><div><b>Nuevos con etiqueta</b><span>Género de tienda, sin estrenar</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><circle cx="9" cy="15" r="5" fill="#f39a7b"/><circle cx="21" cy="15" r="5" fill="#7a1630"/></svg><div><b>Varios colores</b><span>Algunos modelos en más de un tono</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><path d="M15 3l10 4v7c0 7-4.5 11-10 13C9.5 25 5 21 5 14V7z" fill="none" stroke="#7a1630" stroke-width="2" stroke-linejoin="round"/></svg><div><b>Compra protegida</b><span>Pago y envío seguros con Vinted</span></div></li>
+      <li><svg viewBox="0 0 30 30" aria-hidden="true"><rect x="3" y="9" width="17" height="12" rx="1.5" fill="none" stroke="#7a1630" stroke-width="2"/><path d="M20 13h4l3 4v4h-7" fill="none" stroke="#7a1630" stroke-width="2" stroke-linejoin="round"/><circle cx="9" cy="23" r="2.2" fill="#7a1630"/><circle cx="23" cy="23" r="2.2" fill="#7a1630"/></svg><div><b>Envío desde Málaga</b><span>A toda España</span></div></li>
     </ul>
   </div>
 
